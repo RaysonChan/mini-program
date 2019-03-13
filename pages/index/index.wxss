@@ -1,0 +1,57 @@
+/* pages/index/index.wxss */
+/* swiper 下imgae的样式 */
+swiper{
+  height: 350rpx;
+}
+swiper image{
+  width: 100%;
+  height: 350rpx;
+}
+
+/* 九宫格部分 */
+.navList{
+  /* flex 可以让元素在一行上显示 */
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30rpx;
+}
+.navList navigator{
+  /* width: 33.13%; */
+  width: 33.33%;
+  /* border: 1rpx solid pink; */
+  text-align: center;
+  color: #555;
+  font-size: 30rpx;
+  /* 内边距撑开我们的navigator */
+  padding: 20rpx 0;
+  border-right: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  /* css3 的新盒子模型属性 box-sizing */
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.navList navigator:nth-child(3n){
+  border-right: none;
+}
+/* 图片有一个默认的宽高， 干掉他 */
+.navList navigator image{
+  width: 30%;
+  height: 70rpx;
+}
+
+/* 推荐部分 */
+.sug{
+  padding: 0 20rpx;
+}
+.sug navigator:nth-child(1){
+  width: 48%;
+  float: left;
+}
+.sug navigator:nth-child(2){
+  width: 48%;
+  float: right;
+}
+.sug navigator image{
+  width: 100%;
+  height: 200rpx;
+}
